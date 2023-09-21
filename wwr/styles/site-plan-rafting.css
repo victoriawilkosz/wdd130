@@ -12,7 +12,7 @@
     --nav-hover-link-color: #E2C044;
     --nav-hover-background-color: #FBFCD9;
 }
-
+@import url(https://fonts.google.com/specimen/Lato);
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
