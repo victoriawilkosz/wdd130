@@ -295,3 +295,308 @@ h1 {
     justify-content: center;
     padding: 20px;
 }
+
+.trips-page {
+    padding: 100px 20px 20px; /* Add padding to the top (equal to the height of the fixed header) */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Trips Page Styles */
+
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 50px;
+}
+
+.cta-heading {
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+}
+
+.cta-button {
+    margin-top: 20px;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+p {
+    padding: 10px
+}
+
+/* Trip Descriptions Section */
+.trip-description {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.trip-info {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+.trip-info img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Table Outlining Available Trips */
+.trip-table {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.trip-table th {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+.trip-table tbody tr:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Additional Home Page Styles */
+
+.home-page {
+    padding-top: 80px; /* Adjust padding based on your header height */
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    max-width: 80%;
+    width: 100%;
+}
+
+.newsletter, .cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.newsletter form input,
+.cta p {
+    margin: 20px 0;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--background-color);
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.full-width-image {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%; /* Ensure the image takes the full width of its container */
+}
+
+.full-width-image img {
+    width: 100vw; /* Set the image width to 100% of the viewport width */
+    max-height: 400px; /* Set a maximum height for the image */
+    object-fit: cover;
+    border-radius: 0;
+    transform: translateX(-10%); /* Center the image horizontally */
+}
+
+.image-caption {
+    position: absolute;
+    top: 20%; /* Position the caption at the vertical center of the container */
+    left: 50%; /* Position the caption at the horizontal center of the container */
+    transform: translate(-70%, -50%); /* Center the caption precisely */
+    background-color: rgba(24, 44, 57, 0.7); /* Add a semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.image-caption h2 {
+    color: white; /* Set the text color to white */
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+.newsletter form input[type="text"],
+.newsletter form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Adjust font size for inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter form button[type="submit"] {
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Adjust font size for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter form button[type="submit"]:hover {
+    background-color: var(--accent2-color);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* About Us Page Styles */
+
+.about-page {
+    padding: 100px 20px; /* Adjust padding based on your header height */
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-page .hero {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page .hero img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-page .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    max-width: 80%;
+    width: 100%;
+}
+
+.about-page .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-page section {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.about-page section h2 {
+    margin-top: 600px; /* Add margin-top to create space between the hero image and <h2>History</h2> */
+}
+/* About Us page specific styles for <h1> */
+.about-page .hero-content h1 {
+    font-size: 2rem;
+    margin: 0;
+    max-width: 80%;
+    width: 100%;
+    color: #fff; /* Set text color to the primary color */
+    text-shadow: none;
+    background-color: rgba(24, 44, 57, 0.7); /* Add a semi-transparent background */
+    padding: 8px;
+    border-radius: 10px;
+}
